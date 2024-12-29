@@ -6,6 +6,7 @@ import Product from './components/Product';
 import Process from './components/Process';
 import Impact from './components/Impact';
 import WaitlistDialog from './components/WaitlistDialog';
+import './App.css'
 
 function App() {
   const [isWaitlistOpen, setIsWaitlistOpen] = useState(false);

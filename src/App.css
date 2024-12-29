@@ -1,42 +1,45 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+@layer components {
+  .dialog-overlay {
+    @apply fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50;
   }
-  to {
-    transform: rotate(360deg);
+
+  .dialog-content {
+    @apply bg-white p-6 rounded-lg max-w-md w-full mx-4;
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .nav-link {
+    @apply text-black hover:text-gray-600;
   }
-}
 
-.card {
-  padding: 2em;
-}
+  .nav-container {
+    @apply fixed top-0 w-full bg-[#1B4E6B] text-white p-4 z-50;
+  }
 
-.read-the-docs {
-  color: #888;
+  .hero-section {
+    @apply bg-[#1B4E6B] min-h-screen;
+  }
+
+  .section-container {
+    @apply min-h-screen pt-24 px-4;
+  }
+
+  .section-title {
+    @apply text-4xl font-bold mb-8 text-center;
+  }
+
+  .product-card {
+    @apply bg-yellow-200 p-4 rounded-lg;
+  }
+
+  .process-number {
+    @apply text-6xl text-blue-300 mb-4;
+  }
+
+  .impact-stat {
+    @apply relative w-32 h-32 mx-auto mb-4;
+  }
 }
