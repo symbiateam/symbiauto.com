@@ -13,10 +13,15 @@ export default function App() {
     <div className="min-h-screen">
       <Navbar />
       <Hero />
-      <Problem />
-      <Product />
-      <Process />
-      <Impact />
+      <div className="bg-white">
+        <Problem />
+        <div className="section-divider" />
+        <Product />
+        <div className="section-divider" />
+        <Process />
+        <div className="section-divider" />
+        <Impact />
+      </div>
       <BackToTop />
       <Footer />
     </div>

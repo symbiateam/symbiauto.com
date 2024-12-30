@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --navy-900: #1a1f2e;
+  --navy-900: #1B1F34;
   --cyan-400: #22d3ee;
   --cyan-300: #67e8f9;
 }
@@ -30,4 +30,11 @@
   background-position: center right;
   background-size: contain;
   opacity: 0.8;
+}
+
+.section-divider {
+  border-top: 2px solid #D1D5DB;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }

@@ -10,13 +10,16 @@ export default function Product() {
     ];
   
     return (
-      <section id="product" className="bg-gray-50 py-20">
+      <section id="product" className="bg-white py-20">
         <div className="max-w-4xl mx-auto px-8">
           <h2 className="text-4xl font-bold mb-8 text-center">Product</h2>
           <p className="text-xl text-center mb-12">We use AI to SDV thousands of data points in seconds:</p>
-          <div className="flex flex-col space-y-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
             {features.map((feature, index) => (
-              <div key={index} className="bg-navy-900 p-6 rounded-lg text-white text-center">
+              <div 
+                key={index} 
+                className="bg-navy-900 p-8 text-white text-center h-64 flex items-center justify-center text-lg"
+              >
                 {feature}
               </div>
             ))}

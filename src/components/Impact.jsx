@@ -3,7 +3,7 @@ import React from 'react';
 export default function Impact() {
     const stats = [
       { number: "30%", text: "faster trial completion", icon: "⚡" },
-      { number: "25%", text: "Lower costs", icon: "💰" },
+      { number: "25%", text: "lower costs", icon: "💰" },
       { number: "90%", text: "less CRA time spent on SDV", icon: "⏱️" }
     ];
   
