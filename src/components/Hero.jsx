@@ -1,21 +1,31 @@
-import React from 'react';
-import NetworkVisualization from './NetworkVisualization';
+import React, { useState } from 'react';
+import WaitlistDialog from './WaitlistDialog';
 
-const Hero = () => (
-  <div className="hero-section">
-    <div className="max-w-6xl mx-auto px-4">
-      <div className="flex justify-between items-start pt-32 pb-48">
-        <div className="w-3/5">
-          <h1 className="text-6xl font-bold text-white leading-tight">
+export default function Hero() {
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+  
+  return (
+    <div className="relative bg-navy-900 py-24">
+      <div className="absolute right-0 inset-y-0 w-1/2">
+        <div className="h-full w-full network-visualization" />
+      </div>
+      <div className="relative z-10 px-12">
+        <div className="max-w-2xl pl-8">
+          <h1 className="text-6xl font-light text-white leading-tight mb-8">
             Accelerate your trials with Automatic Source Document Verification.
           </h1>
-        </div>
-        <div className="w-2/5">
-          <NetworkVisualization />
+          <button 
+            onClick={() => setIsDialogOpen(true)}
+            className="bg-cyan-400 text-navy-900 px-8 py-4 text-xl rounded-md hover:bg-cyan-300 transition-colors"
+          >
+            Join waitlist
+          </button>
         </div>
       </div>
+      <WaitlistDialog 
+        isOpen={isDialogOpen} 
+        onClose={() => setIsDialogOpen(false)} 
+      />
     </div>
-  </div>
-);
-
-export default Hero;
+  );
+}

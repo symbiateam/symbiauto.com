@@ -1,15 +1,16 @@
 import React from 'react';
 
-const Problem = () => (
-  <div className="max-w-6xl mx-auto px-4 -mt-24">
-    <div className="text-center">
-      <h2 className="section-title">Problem</h2>
-      <p className="text-xl max-w-3xl mx-auto">
-        Clinical trials face critical bottlenecks due to manual Source Document Verification (SDV), 
-        delaying trial completions and increasing trial costs.
-      </p>
-    </div>
-  </div>
-);
-
-export default Problem;
+export default function Problem() {
+    return (
+      <section id="problem" className="bg-white py-20">
+        <div className="max-w-4xl mx-auto text-center px-8">
+          <h2 className="text-4xl font-bold mb-8">Problem</h2>
+          <p className="text-xl text-gray-700">
+            Clinical trials face critical bottlenecks due to manual Source Document Verification (SDV), 
+            delaying trial completions and increasing trial costs.
+          </p>
+        </div>
+      </section>
+    );
+}
+  

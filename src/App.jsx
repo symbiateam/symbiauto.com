@@ -1,27 +1,24 @@
-import { useState } from 'react';
+import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Problem from './components/Problem';
 import Product from './components/Product';
 import Process from './components/Process';
 import Impact from './components/Impact';
-import WaitlistDialog from './components/WaitlistDialog';
-import './App.css'
+import BackToTop from './components/BackToTop';
+import Footer from './components/Footer';
 
-function App() {
-  const [isWaitlistOpen, setIsWaitlistOpen] = useState(false);
-
+export default function App() {
   return (
-    <div className="bg-white">
-      <Navbar setIsWaitlistOpen={setIsWaitlistOpen} />
+    <div className="min-h-screen">
+      <Navbar />
       <Hero />
       <Problem />
       <Product />
       <Process />
       <Impact />
-      <WaitlistDialog isOpen={isWaitlistOpen} setIsOpen={setIsWaitlistOpen} />
+      <BackToTop />
+      <Footer />
     </div>
   );
 }
-
-export default App;
