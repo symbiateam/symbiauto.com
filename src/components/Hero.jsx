@@ -6,7 +6,7 @@ export default function Hero() {
   
   return (
     <div className="relative bg-navy-900 py-32">
-      <div className="absolute right-0 inset-y-0 w-1/2">
+      <div className="absolute inset-0">
         <div className="h-full w-full network-visualization" />
       </div>
       <div className="relative z-10 px-12">

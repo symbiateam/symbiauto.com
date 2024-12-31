@@ -25,10 +25,10 @@
 }
 
 .network-visualization {
-  background-image: url('/network-bg.svg');
+  background-image: url('/network-bg.png');
   background-repeat: no-repeat;
   background-position: center right;
-  background-size: contain;
+  background-size: cover;     
   opacity: 0.8;
 }
 
