@@ -21,7 +21,7 @@ export default function Impact() {
                 <img 
                   src={stat.icon} 
                   alt={stat.text} 
-                  className={`h-20 ${stat.text.includes('lower costs') ? 'w-21' : 'w-20'}`}
+                  className={`h-25 ${stat.text.includes('lower costs') ? 'w-32' : 'w-28'}`}
                 />
               </div>
               <div className="bg-navy-900 text-white p-8 rounded flex-1">
