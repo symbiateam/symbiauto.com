@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1422" height="617" viewBox="0 0 1422 617">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280" height="362" viewBox="0 0 1280 362">
   <defs>
     <clipPath id="clip-path">
-      <rect id="Rectangle_2" data-name="Rectangle 2" width="1422" height="617" transform="translate(-69 -132)" fill="#00587c"/>
+      <rect id="Rectangle_2" data-name="Rectangle 2" width="1280" height="362" transform="translate(0 123)" fill="#00587c"/>
     </clipPath>
     <clipPath id="clip-path-2">
       <rect id="Rectangle_188" data-name="Rectangle 188" width="2664.271" height="2369.989" fill="none"/>
@@ -236,7 +236,7 @@
     </clipPath>
     <radialGradient id="radial-gradient-34" r="0.5" gradientTransform="matrix(1, 0, 0, -1, 0, 14.344)" xlink:href="#radial-gradient"/>
   </defs>
-  <g id="Mask_Group_267" data-name="Mask Group 267" transform="translate(69 132)" clip-path="url(#clip-path)">
+  <g id="Mask_Group_267" data-name="Mask Group 267" transform="translate(0 -123)" clip-path="url(#clip-path)">
     <g id="Group_761" data-name="Group 761" transform="translate(-577.903 -1169.951)">
       <g id="Group_760" data-name="Group 760" clip-path="url(#clip-path-2)">
         <g id="Group_522" data-name="Group 522" transform="translate(499.656 710.376)">

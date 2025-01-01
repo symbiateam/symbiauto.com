@@ -1,5 +1,5 @@
 import React from 'react';
-import symbiaLogo from '../assets/symbia-logo.svg';
+import symbiaLogo from '/public/symbia-logo.svg';
 
 export default function Navbar() {
   const scrollToSection = (id) => {

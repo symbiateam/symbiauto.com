@@ -5,10 +5,15 @@ export default function Hero() {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   
   return (
-    <div className="relative bg-navy-900 py-32">
-      <div className="absolute inset-0">
-        <div className="h-full w-full network-visualization" />
-      </div>
+    <div 
+      className="relative py-32" 
+      style={{
+        backgroundImage: `url('/public/network-bg.svg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundColor: 'var(--navy-900)'
+      }}
+    >
       <div className="relative z-10 px-12">
         <div className="max-w-2xl pl-16">
           <h1 className="text-6xl font-light text-white leading-tight mb-8">
