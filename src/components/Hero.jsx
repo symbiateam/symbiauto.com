@@ -8,7 +8,7 @@ export default function Hero() {
     <div 
       className="relative py-32" 
       style={{
-        backgroundImage: `url('/public/network-bg.svg')`,
+        backgroundImage: `url('/network-bg.svg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundColor: 'var(--navy-900)'
