@@ -6,7 +6,7 @@ import clockIcon from '../assets/clock.png';
 export default function Impact() {
   const stats = [
     { number: "30%", text: "faster trial completion", icon: checkIcon },
-    { number: "25%", text: "lower costs", icon: moneyIcon },
+    { number: "15%", text: "lower costs", icon: moneyIcon },
     { number: "90%", text: "less CRA time spent on SDV", icon: clockIcon }
   ];
 
