@@ -9,7 +9,7 @@ export default function Impact() {
     { number: "15%", text: "lower costs", icon: moneyIcon },
     { number: "90%", text: "less CRA time spent on SDV", icon: clockIcon }
   ];
-
+  //check
   return (
     <section id="impact" className="bg-gray-50 py-16">
       <div className="max-w-4xl mx-auto px-8">
