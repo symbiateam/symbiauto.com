@@ -3,14 +3,14 @@ import { Mail } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="py-12 bg-foreground/5">
+    <footer className="py-12 bg-secondary/50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row justify-between items-center">
+        <div className="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center">
           <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <span className="text-2xl font-bold text-primary">Symbia</span>
+            <div className="mb-4">
+              <span className="text-xl font-medium text-foreground">Symbia</span>
             </div>
-            <p className="text-foreground/60 max-w-md">
+            <p className="text-muted-foreground max-w-md">
               Making clinical trial approval less expensive and faster through
               AI-powered protocol preparation.
             </p>
@@ -18,12 +18,12 @@ const Footer = () => {
           
           <div className="mt-8 md:mt-0">
             <div className="flex items-center space-x-2 mb-4">
-              <Mail size={18} className="text-primary" />
-              <a href="mailto:contact@symbia.ai" className="text-foreground/80 hover:text-primary transition-colors">
+              <Mail size={18} className="text-accent" />
+              <a href="mailto:contact@symbia.ai" className="text-muted-foreground hover:text-accent transition-colors">
                 contact@symbia.ai
               </a>
             </div>
-            <p className="text-foreground/60 text-sm">
+            <p className="text-muted-foreground text-sm">
               &copy; {new Date().getFullYear()} Symbia. All rights reserved.
             </p>
           </div>
