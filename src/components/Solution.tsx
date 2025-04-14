@@ -1,5 +1,4 @@
-
-import { FileText, ShieldCheck, Sparkles, Upload } from 'lucide-react';
+import { FileText, ShieldCheck, Sparkles, Upload } from "lucide-react";
 
 const Solution = () => {
   return (
@@ -7,13 +6,17 @@ const Solution = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-medium mb-6">Our Solution</h2>
+            <h2 className="text-3xl md:text-4xl font-medium mb-6">
+              Our Solution
+            </h2>
             <p className="text-xl text-muted-foreground">
-              Symbia is an AI platform that automates protocol preparation, 
-              making clinical trial approval faster and less expensive.
+              Symbia automates the majority of the IND preparation process at a
+              fraction of the cost. It drafts the protocol and Investigator
+              Brochure, identifies missing but crucial experiments, and flags
+              potential FDA clinical hold issues.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             <div className="space-y-8">
               <div className="flex items-start space-x-4">
@@ -21,14 +24,17 @@ const Solution = () => {
                   <Upload size={20} className="text-accent" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-medium mb-2">Upload & Generate</h3>
+                  <h3 className="text-lg font-medium mb-2">
+                    Upload & Generate
+                  </h3>
                   <p className="text-muted-foreground">
-                    Upload your research data and get a scientifically rigorous draft that 
-                    complies with the latest FDA regulations.
+                    Import your pre-clinical data from Google Drive or Dropbox
+                    and get scientifically rigorous drafts that comply with the
+                    latest FDA regulations.
                   </p>
                 </div>
               </div>
-              
+
               <div className="flex items-start space-x-4">
                 <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center mt-1">
                   <FileText size={20} className="text-accent" />
@@ -36,82 +42,83 @@ const Solution = () => {
                 <div>
                   <h3 className="text-lg font-medium mb-2">Review & Improve</h3>
                   <p className="text-muted-foreground">
-                    Upload your existing protocol draft and receive intelligent feedback on 
-                    potential issues that might trigger FDA revisions.
+                    Upload drafts and pre-clinical data and receive intelligent
+                    feedback on potential issues and/or missing experiments that
+                    might trigger clinical hold.
                   </p>
                 </div>
               </div>
-              
+
               <div className="flex items-start space-x-4">
                 <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center mt-1">
                   <ShieldCheck size={20} className="text-accent" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-medium mb-2">Proactive Compliance</h3>
+                  <h3 className="text-lg font-medium mb-2">
+                    Proactive Compliance
+                  </h3>
                   <p className="text-muted-foreground">
-                    Address potential issues before submission, drastically reducing the 
+                    Address issues before submission, drastically reducing the
                     likelihood of revisions and delays.
                   </p>
                 </div>
               </div>
-              
+
               <div className="flex items-start space-x-4">
                 <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center mt-1">
                   <Sparkles size={20} className="text-accent" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-medium mb-2">Expertise-Driven AI</h3>
+                  <h3 className="text-lg font-medium mb-2">
+                    Expertise-Driven AI
+                  </h3>
                   <p className="text-muted-foreground">
-                    Our AI is trained on successful study designs, FDA guidelines, 
-                    and a database of real FDA comments.
+                    We are working to build a database of protocols and IBs, for
+                    our AI tool to reference.
                   </p>
                 </div>
               </div>
             </div>
-            
+
             <div className="bg-secondary/50 rounded-lg p-6">
-              <h4 className="font-medium mb-4">Protocol Analysis</h4>
-              
+              <h4 className="font-medium mb-4">Feedback</h4>
+
               <div className="space-y-4">
                 <div className="p-4 bg-white rounded-lg">
                   <p className="text-sm">
-                    <span className="font-medium text-red-500">Issue detected:</span> Section 3.2 - 
-                    Inclusion criteria needs more specific biomarker definition.
+                    <span className="font-medium text-red-500">
+                      Issue detected:
+                    </span>{" "}
+                    Sections 3.1 and 5.4 of the Investigator’s Brochure
+                    reference repeated-dose toxicity studies in rats but lack
+                    immunotoxicity endpoints or a non-rodent model, limiting
+                    understanding of potential immune-related risks.
                   </p>
                 </div>
-                
+
                 <div className="p-4 bg-white rounded-lg">
                   <p className="text-sm">
-                    <span className="font-medium text-amber-500">Suggestion:</span> Consider additional 
-                    safety monitoring for the dose escalation protocol.
+                    <span className="font-medium text-amber-500">
+                      Suggestion:
+                    </span>{" "}
+                    IB: Conduct an immunotoxicity study using a clinically
+                    relevant non-rodent species to robustly evaluate immune
+                    responses and enhance the Investigator’s Brochure’s safety
+                    profile.
                   </p>
                 </div>
-                
+
                 <div className="p-4 bg-white rounded-lg">
                   <p className="text-sm">
-                    <span className="font-medium text-green-500">Strength:</span> Statistical analysis plan 
-                    is well-designed and aligns with FDA expectations.
+                    <span className="font-medium text-green-500">
+                      Strength:
+                    </span>{" "}
+                    The protocol features a well-powered, randomized,
+                    double-blind design with clear inclusion criteria,
+                    minimizing bias and ensuring robust study outcomes.
                   </p>
                 </div>
               </div>
-            </div>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-white p-6 rounded-lg">
-              <h4 className="font-medium mb-3">Proprietary Data Moat</h4>
-              <p className="text-muted-foreground text-sm">
-                We're building a unique database of real FDA comments and protocols through
-                strategic partnerships with biotech companies and ex-FDA reviewers.
-              </p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg">
-              <h4 className="font-medium mb-3">Regulatory Expertise</h4>
-              <p className="text-muted-foreground text-sm">
-                Our team combines technical AI knowledge with hands-on regulatory experience,
-                allowing us to build algorithms that truly understand regulatory nuances.
-              </p>
             </div>
           </div>
         </div>
