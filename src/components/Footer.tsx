@@ -19,12 +19,12 @@ const Footer = () => {
           <div className="mt-8 md:mt-0">
             <div className="flex items-center space-x-2 mb-4">
               <Mail size={18} className="text-accent" />
-              <a href="mailto:contact@symbia.ai" className="text-muted-foreground hover:text-accent transition-colors">
-                contact@symbia.ai
+              <a href="mailto:ashleymo@symbiauto.com" className="text-muted-foreground hover:text-accent transition-colors">
+                ashleymo@symbiauto.com
               </a>
             </div>
             <p className="text-muted-foreground text-sm">
-              &copy; {new Date().getFullYear()} Symbia. All rights reserved.
+              &copy; {new Date().getFullYear()} Symbia Co. All rights reserved.
             </p>
           </div>
         </div>

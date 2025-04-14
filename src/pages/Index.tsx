@@ -5,7 +5,6 @@ import Problem from '@/components/Problem';
 import Solution from '@/components/Solution';
 import Team from '@/components/Team';
 import Pricing from '@/components/Pricing';
-import Progress from '@/components/Progress';
 import CTA from '@/components/CTA';
 import Footer from '@/components/Footer';
 
@@ -18,7 +17,6 @@ const Index = () => {
       <Solution />
       <Team />
       <Pricing />
-      <Progress />
       <CTA />
       <Footer />
     </div>

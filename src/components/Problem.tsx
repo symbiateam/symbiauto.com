@@ -49,14 +49,14 @@ const Problem = () => {
               </p>
             </div>
           </div>
-          
+{/*           
           <div className="mt-12 bg-white p-6 rounded-lg">
             <blockquote className="text-muted-foreground italic border-l-4 border-accent pl-4">
               "I went through 5 revisions, delaying my clinical trial by 8 months because the 
               review committee had expectations that weren't explicitly stated in their guidelines."
             </blockquote>
             <p className="mt-3 text-right text-sm text-muted-foreground">- From customer interviews</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
