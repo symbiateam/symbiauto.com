@@ -19,4 +19,7 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  // Set the correct base path for GitHub Pages deployment
+  // If using a custom domain (which you are based on CNAME), it should be '/'
+  base: '/',
 }));
