@@ -10,8 +10,8 @@ const Problem = () => {
               The Challenge
             </h2>
             <p className="text-xl text-muted-foreground">
-              Clinical trial applications are a nightmare. But the support
-              system doesn't make it less so...
+              INDs are a nightmare. But the support system doesn't make it less
+              so...
             </p>
           </div>
 
@@ -23,7 +23,7 @@ const Problem = () => {
               </div>
               <h3 className="text-lg font-medium mb-2">Fragmented support</h3>
               <p className="text-muted-foreground">
-                The CTA contains multiple parts, calling for different domain
+                The IND contains multiple parts, calling for different domain
                 experts to provide advice and draft the CTA.
               </p>
             </div>

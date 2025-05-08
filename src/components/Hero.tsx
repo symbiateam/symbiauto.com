@@ -11,14 +11,14 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Main Heading */}
           <h1 className="mercury-heading mb-8">
-            Clinical Trial Applications,
+            Your IND,
             <br />
             simplified.
           </h1>
 
           {/* Subheading */}
           <p className="mercury-subheading mb-12 max-w-2xl mx-auto">
-            Assemble your CTA with all the right tools in one place.
+            Assemble your IND with all the right tools in one place.
           </p>
 
           {/* CTA Buttons */}
