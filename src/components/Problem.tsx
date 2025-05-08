@@ -24,7 +24,7 @@ const Problem = () => {
               <h3 className="text-lg font-medium mb-2">Fragmented support</h3>
               <p className="text-muted-foreground">
                 The IND contains multiple parts, calling for different domain
-                experts to provide advice and draft the CTA.
+                experts to provide advice and draft the IND.
               </p>
             </div>
 
