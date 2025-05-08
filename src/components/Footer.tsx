@@ -12,7 +12,7 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-muted-foreground max-w-md">
-              Assemble your CTA with all the right tools in one place.
+              Assemble your IND with all the right tools in one place.
             </p>
           </div>
 

@@ -13,7 +13,7 @@ const Solution = () => {
               Symbia tells you what you need to account for in your pre-clinical
               experiments and drafts your dense regulatory reports for you. You
               can receive the majority of your regulatory support from one
-              source and launch months earlier.
+              source and submit your IND months earlier.
             </p>
           </div>
 
@@ -55,7 +55,7 @@ const Solution = () => {
                 <h3 className="text-xl font-medium mb-3">Obtain Drafts</h3>
                 <p className="text-muted-foreground">
                   Import your pre-clinical data from Google Drive or Benchling
-                  and receive first CTD/protocol/IB drafts in minutes.
+                  and receive first CTD/protocol drafts in minutes.
                 </p>
               </div>
             </div>
