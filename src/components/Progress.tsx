@@ -1,114 +1,109 @@
-
-import { Button } from '@/components/ui/button';
-import { CheckCircle, Clock, Target } from 'lucide-react';
+import { Button } from "@/components/ui/button";
+import { CheckCircle } from "lucide-react";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const Progress = () => {
   return (
-    <section className="py-20">
+    <section className="py-20 bg-secondary/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-medium mb-6">Our Progress</h2>
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-medium mb-6">
+              Our Progress
+            </h2>
             <p className="text-xl text-muted-foreground">
-              We've started just 2.5 weeks ago and already achieved significant milestones.
+              Symbia began in April 2025, and we're fast. Here are demos of what
+              we've made so far.
             </p>
           </div>
-          
-          <div className="space-y-6 mb-16">
-            {/* Timeline Item 1 */}
-            <div className="flex">
-              <div className="mr-4">
-                <div className="w-8 h-8 rounded-full bg-white border-2 border-accent flex items-center justify-center">
-                  <CheckCircle size={16} className="text-accent" />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+            {/* Video Tabs */}
+            <div className="space-y-4">
+              <Tabs defaultValue="ctd-generator" className="w-full">
+                <TabsList className="grid w-full grid-cols-2">
+                  <TabsTrigger value="ctd-generator">CTD Generator</TabsTrigger>
+                  <TabsTrigger value="protocol-reviewer">Protocol Reviewer</TabsTrigger>
+                </TabsList>
+                <TabsContent value="ctd-generator" className="mt-4">
+                  <div className="aspect-video bg-black/5 rounded-lg shadow-md overflow-hidden">
+                    {/* Replace with your actual YouTube video ID */}
+                    <iframe 
+                      className="w-full h-full" 
+                      src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                      title="CTD Generator Demo" 
+                      frameBorder="0" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                      allowFullScreen
+                    ></iframe>
+                  </div>
+                  <p className="text-sm text-muted-foreground mt-2">CTD Generator Demo: See how Symbia automatically generates Module 2 documentation.</p>
+                </TabsContent>
+                <TabsContent value="protocol-reviewer" className="mt-4">
+                  <div className="aspect-video bg-black/5 rounded-lg shadow-md overflow-hidden">
+                    {/* Replace with your actual YouTube video ID */}
+                    <iframe 
+                      className="w-full h-full" 
+                      src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                      title="Protocol Reviewer Demo" 
+                      frameBorder="0" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                      allowFullScreen
+                    ></iframe>
+                  </div>
+                  <p className="text-sm text-muted-foreground mt-2">Protocol Reviewer Demo: Watch how Symbia analyzes protocols and flags potential clinical hold issues.</p>
+                </TabsContent>
+              </Tabs>
+            </div>
+
+            {/* Progress Bullets */}
+            <div className="space-y-6">
+              <div className="space-y-4">
+                <div className="flex items-start">
+                  <div className="w-6 h-6 rounded-full bg-accent/10 flex items-center justify-center mr-3 mt-0.5">
+                    <CheckCircle size={14} className="text-accent" />
+                  </div>
+                  <p className="text-muted-foreground">
+                    <span className="font-medium text-foreground">
+                      CTD Generator:
+                    </span>{" "}
+                    We can generate certain CTDs of Module 2. We are currently
+                    working on the rest of Module 2 and 3.
+                  </p>
+                </div>
+
+                <div className="flex items-start">
+                  <div className="w-6 h-6 rounded-full bg-accent/10 flex items-center justify-center mr-3 mt-0.5">
+                    <CheckCircle size={14} className="text-accent" />
+                  </div>
+                  <p className="text-muted-foreground">
+                    <span className="font-medium text-foreground">
+                      Protocol Reviewer:
+                    </span>{" "}
+                    We can analyze protocols and provide feedback that would
+                    have potentially caused a clinical hold.
+                  </p>
+                </div>
+
+                <div className="flex items-start">
+                  <div className="w-6 h-6 rounded-full bg-accent/10 flex items-center justify-center mr-3 mt-0.5">
+                    <CheckCircle size={14} className="text-accent" />
+                  </div>
+                  <p className="text-muted-foreground">
+                    <span className="font-medium text-foreground">
+                      Validation:
+                    </span>{" "}
+                    The quality and accuracy of our CTDs and protocol feedback
+                    have been reviewed and validated by a former FDA reviewer.
+                  </p>
                 </div>
               </div>
-              <div>
-                <h3 className="text-lg font-medium mb-1">Idea Validation</h3>
-                <p className="text-muted-foreground mb-1">
-                  Validated our concept with executives from In8Bio, Elevation, 
-                  Pyxis Oncology, and former FDA reviewers.
-                </p>
-                <span className="text-sm text-accent">Completed</span>
+
+              <div className="mt-8">
+                <Button className="bg-accent hover:bg-accent/90 text-white rounded-full px-6">
+                  Schedule a Demo
+                </Button>
               </div>
-            </div>
-            
-            {/* Timeline Item 2 */}
-            <div className="flex">
-              <div className="mr-4">
-                <div className="w-8 h-8 rounded-full bg-white border-2 border-accent flex items-center justify-center">
-                  <CheckCircle size={16} className="text-accent" />
-                </div>
-              </div>
-              <div>
-                <h3 className="text-lg font-medium mb-1">First MVP</h3>
-                <p className="text-muted-foreground mb-1">
-                  Developed an initial platform that can analyze protocol drafts
-                  and provide revision comments based on FDA guidelines.
-                </p>
-                <span className="text-sm text-accent">Completed</span>
-              </div>
-            </div>
-            
-            {/* Timeline Item 3 */}
-            <div className="flex">
-              <div className="mr-4">
-                <div className="w-8 h-8 rounded-full bg-white border-2 border-accent flex items-center justify-center">
-                  <Clock size={16} className="text-accent" />
-                </div>
-              </div>
-              <div>
-                <h3 className="text-lg font-medium mb-1">Data Moat Development</h3>
-                <p className="text-muted-foreground mb-1">
-                  Currently engaging with ex-FDA reviewers to build our proprietary
-                  database of real FDA comments and protocols.
-                </p>
-                <span className="text-sm text-accent">In Progress</span>
-              </div>
-            </div>
-            
-            {/* Timeline Item 4 */}
-            <div className="flex">
-              <div className="mr-4">
-                <div className="w-8 h-8 rounded-full bg-white border-2 border-foreground/30 flex items-center justify-center">
-                  <Target size={16} className="text-foreground/50" />
-                </div>
-              </div>
-              <div>
-                <h3 className="text-lg font-medium mb-1">Full-Time Development</h3>
-                <p className="text-muted-foreground mb-1">
-                  Seeking $300K funding to go full-time for 12 months, further
-                  develop our database, and enhance our AI platform.
-                </p>
-                <span className="text-sm text-muted-foreground">Next Step</span>
-              </div>
-            </div>
-          </div>
-          
-          {/* Funding request */}
-          <div className="bg-white rounded-lg p-6 border border-border">
-            <h3 className="text-xl font-medium mb-6 text-center">Our Ask: $300K</h3>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-              <div className="bg-secondary/50 p-4 rounded-lg text-center">
-                <p className="text-lg font-medium text-foreground mb-1">$190K</p>
-                <p className="text-sm text-muted-foreground">Full-time development</p>
-              </div>
-              
-              <div className="bg-secondary/50 p-4 rounded-lg text-center">
-                <p className="text-lg font-medium text-foreground mb-1">$100K</p>
-                <p className="text-sm text-muted-foreground">FDA expertise</p>
-              </div>
-              
-              <div className="bg-secondary/50 p-4 rounded-lg text-center">
-                <p className="text-lg font-medium text-foreground mb-1">$10K</p>
-                <p className="text-sm text-muted-foreground">Infrastructure</p>
-              </div>
-            </div>
-            
-            <div className="flex justify-center">
-              <Button className="bg-accent hover:bg-accent/90 text-white rounded-full">
-                Investor Contact
-              </Button>
             </div>
           </div>
         </div>
