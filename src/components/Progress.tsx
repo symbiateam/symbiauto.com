@@ -106,6 +106,18 @@ const Progress = () => {
                     well, and we are continuously making improvements.
                   </p>
                 </div>
+                <div className="flex items-start">
+                  <div className="w-6 h-6 rounded-full bg-accent/10 flex items-center justify-center mr-3 mt-0.5">
+                    <CheckCircle size={14} className="text-accent" />
+                  </div>
+                  <p className="text-muted-foreground">
+                    <span className="font-medium text-foreground">
+                      Expansion:
+                    </span>{" "}
+                    We're working to expand, so that our platform can support
+                    clinical trials in other continents.
+                  </p>
+                </div>
               </div>
 
               <div className="mt-8"></div>
