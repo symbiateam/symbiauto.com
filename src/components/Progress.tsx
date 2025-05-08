@@ -23,35 +23,43 @@ const Progress = () => {
               <Tabs defaultValue="ctd-generator" className="w-full">
                 <TabsList className="grid w-full grid-cols-2">
                   <TabsTrigger value="ctd-generator">CTD Generator</TabsTrigger>
-                  <TabsTrigger value="protocol-reviewer">Protocol Reviewer</TabsTrigger>
+                  <TabsTrigger value="protocol-reviewer">
+                    Protocol Reviewer
+                  </TabsTrigger>
                 </TabsList>
                 <TabsContent value="ctd-generator" className="mt-4">
                   <div className="aspect-video bg-black/5 rounded-lg shadow-md overflow-hidden">
                     {/* Replace with your actual YouTube video ID */}
-                    <iframe 
-                      className="w-full h-full" 
-                      src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-                      title="CTD Generator Demo" 
-                      frameBorder="0" 
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    <iframe
+                      className="w-full h-full"
+                      src="https://www.youtube.com/embed/GBOEgBYMEyo"
+                      title="CTD Generator Demo"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
                     ></iframe>
                   </div>
-                  <p className="text-sm text-muted-foreground mt-2">CTD Generator Demo: See how Symbia automatically generates Module 2 documentation.</p>
+                  <p className="text-sm text-muted-foreground mt-2">
+                    CTD Generator Demo: See how Symbia automatically generates
+                    Module 2 documentation.
+                  </p>
                 </TabsContent>
                 <TabsContent value="protocol-reviewer" className="mt-4">
                   <div className="aspect-video bg-black/5 rounded-lg shadow-md overflow-hidden">
                     {/* Replace with your actual YouTube video ID */}
-                    <iframe 
-                      className="w-full h-full" 
-                      src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-                      title="Protocol Reviewer Demo" 
-                      frameBorder="0" 
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    <iframe
+                      className="w-full h-full"
+                      src="https://www.youtube.com/embed/cntsbjN7ki8"
+                      title="Protocol Reviewer Demo"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
                     ></iframe>
                   </div>
-                  <p className="text-sm text-muted-foreground mt-2">Protocol Reviewer Demo: Watch how Symbia analyzes protocols and flags potential clinical hold issues.</p>
+                  <p className="text-sm text-muted-foreground mt-2">
+                    Protocol Reviewer Demo: Watch how Symbia analyzes protocols
+                    and flags potential clinical hold issues.
+                  </p>
                 </TabsContent>
               </Tabs>
             </div>
@@ -94,16 +102,13 @@ const Progress = () => {
                       Validation:
                     </span>{" "}
                     The quality and accuracy of our CTDs and protocol feedback
-                    have been reviewed and validated by a former FDA reviewer.
+                    have been reviewed by a former FDA reviewer. It is going
+                    well, and we are continuously making improvements.
                   </p>
                 </div>
               </div>
 
-              <div className="mt-8">
-                <Button className="bg-accent hover:bg-accent/90 text-white rounded-full px-6">
-                  Schedule a Demo
-                </Button>
-              </div>
+              <div className="mt-8"></div>
             </div>
           </div>
         </div>
