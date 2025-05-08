@@ -12,8 +12,7 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-muted-foreground max-w-md">
-              Save time & cost on drafting/review and minimize risk of clinical
-              hold.
+              Assemble your CTA with all the right tools in one place.
             </p>
           </div>
 

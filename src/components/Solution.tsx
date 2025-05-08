@@ -1,4 +1,4 @@
-import { FileText, ShieldCheck, Sparkles, Upload } from "lucide-react";
+import { FileText, ClipboardList, Search, CheckCircle } from "lucide-react";
 
 const Solution = () => {
   return (
@@ -10,114 +10,69 @@ const Solution = () => {
               Our Solution
             </h2>
             <p className="text-xl text-muted-foreground">
-              Symbia automates the majority of the IND preparation process at a
-              fraction of the cost. It drafts the protocol and Investigator
-              Brochure, identifies missing but crucial experiments, and flags
-              potential FDA clinical hold issues.
+              Symbia tells you what you need to account for in your pre-clinical
+              experiments and drafts your dense regulatory reports for you. You
+              can receive the majority of your regulatory support from one
+              source and launch months earlier.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-            <div className="space-y-8">
-              <div className="flex items-start space-x-4">
-                <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center mt-1">
-                  <Upload size={20} className="text-accent" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-medium mb-2">
-                    Upload & Generate
-                  </h3>
-                  <p className="text-muted-foreground">
-                    Import your pre-clinical data from Google Drive or Dropbox
-                    and get scientifically rigorous drafts that comply with the
-                    latest FDA regulations.
-                  </p>
-                </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12 mb-16">
+            <div className="flex items-start space-x-5">
+              <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mt-1">
+                <ClipboardList size={22} className="text-accent" />
               </div>
-
-              <div className="flex items-start space-x-4">
-                <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center mt-1">
-                  <FileText size={20} className="text-accent" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-medium mb-2">Review & Improve</h3>
-                  <p className="text-muted-foreground">
-                    Upload drafts and pre-clinical data and receive intelligent
-                    feedback on potential issues and/or missing experiments that
-                    might trigger clinical hold.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center mt-1">
-                  <ShieldCheck size={20} className="text-accent" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-medium mb-2">
-                    Proactive Compliance
-                  </h3>
-                  <p className="text-muted-foreground">
-                    Address issues before submission, drastically reducing the
-                    likelihood of revisions and delays.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center mt-1">
-                  <Sparkles size={20} className="text-accent" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-medium mb-2">
-                    Expertise-Driven AI
-                  </h3>
-                  <p className="text-muted-foreground">
-                    We are working to build a database of protocols and IBs, for
-                    our AI tool to reference.
-                  </p>
-                </div>
+              <div>
+                <h3 className="text-xl font-medium mb-3">Fill Background</h3>
+                <p className="text-muted-foreground">
+                  Fill out a therapeutic profile, which helps Symbia provide
+                  study recommendations and write your IND docs with the highest
+                  scientific relevancy.
+                </p>
               </div>
             </div>
 
-            <div className="bg-secondary/50 rounded-lg p-6">
-              <h4 className="font-medium mb-4">Feedback</h4>
+            <div className="flex items-start space-x-5">
+              <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mt-1">
+                <Search size={22} className="text-accent" />
+              </div>
+              <div>
+                <h3 className="text-xl font-medium mb-3">
+                  Pre-clinical Guidance
+                </h3>
+                <p className="text-muted-foreground">
+                  Upload past experimental data and papers and obtain a
+                  customized list of pre-clinical experiments.
+                </p>
+              </div>
+            </div>
 
-              <div className="space-y-4">
-                <div className="p-4 bg-white rounded-lg">
-                  <p className="text-sm">
-                    <span className="font-medium text-red-500">
-                      Issue detected:
-                    </span>{" "}
-                    Sections 3.1 and 5.4 of the Investigator’s Brochure
-                    reference repeated-dose toxicity studies in rats but lack
-                    immunotoxicity endpoints or a non-rodent model, limiting
-                    understanding of potential immune-related risks.
-                  </p>
-                </div>
+            <div className="flex items-start space-x-5">
+              <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mt-1">
+                <FileText size={22} className="text-accent" />
+              </div>
+              <div>
+                <h3 className="text-xl font-medium mb-3">Obtain Drafts</h3>
+                <p className="text-muted-foreground">
+                  Import your pre-clinical data from Google Drive or Benchling
+                  and receive first CTD/protocol/IB drafts in minutes.
+                </p>
+              </div>
+            </div>
 
-                <div className="p-4 bg-white rounded-lg">
-                  <p className="text-sm">
-                    <span className="font-medium text-amber-500">
-                      Suggestion:
-                    </span>{" "}
-                    IB: Conduct an immunotoxicity study using a clinically
-                    relevant non-rodent species to robustly evaluate immune
-                    responses and enhance the Investigator’s Brochure’s safety
-                    profile.
-                  </p>
-                </div>
-
-                <div className="p-4 bg-white rounded-lg">
-                  <p className="text-sm">
-                    <span className="font-medium text-green-500">
-                      Strength:
-                    </span>{" "}
-                    The protocol features a well-powered, randomized,
-                    double-blind design with clear inclusion criteria,
-                    minimizing bias and ensuring robust study outcomes.
-                  </p>
-                </div>
+            <div className="flex items-start space-x-5">
+              <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mt-1">
+                <CheckCircle size={22} className="text-accent" />
+              </div>
+              <div>
+                <h3 className="text-xl font-medium mb-3">
+                  Proactive Compliance
+                </h3>
+                <p className="text-muted-foreground">
+                  Upload your pre-clinical data and Symbia flags potential
+                  missing data points. Obtain your protocol and Symbia flags
+                  what could be called out for clinical hold.
+                </p>
               </div>
             </div>
           </div>

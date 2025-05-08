@@ -1,4 +1,4 @@
-import { AlertTriangle, Clock, DollarSign } from "lucide-react";
+import { AlertTriangle, Clock, PuzzleIcon } from "lucide-react";
 
 const Problem = () => {
   return (
@@ -10,10 +10,8 @@ const Problem = () => {
               The Challenge
             </h2>
             <p className="text-xl text-muted-foreground">
-              The implications of a poorly developed IND increases chances of
-              clinical hold or rejection, which delays launch date and adds
-              unexpected cost. But, preparing a good IND application is time
-              consuming and expensive.
+              Clinical trial applications are a nightmare. But the support
+              system doesn't make it less so...
             </p>
           </div>
 
@@ -21,14 +19,12 @@ const Problem = () => {
             {/* Challenge 1 */}
             <div className="bg-white p-6 rounded-lg">
               <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center mb-4">
-                <DollarSign size={20} className="text-accent" />
+                <PuzzleIcon size={20} className="text-accent" />
               </div>
-              <h3 className="text-lg font-medium mb-2">
-                Expensive Consultants
-              </h3>
+              <h3 className="text-lg font-medium mb-2">Fragmented support</h3>
               <p className="text-muted-foreground">
-                Good consultants charge high rates for protocol & IB drafting
-                and review.
+                The CTA contains multiple parts, calling for different domain
+                experts to provide advice and draft the CTA.
               </p>
             </div>
 
@@ -37,12 +33,10 @@ const Problem = () => {
               <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center mb-4">
                 <Clock size={20} className="text-accent" />
               </div>
-              <h3 className="text-lg font-medium mb-2">
-                Time-Consuming Process
-              </h3>
+              <h3 className="text-lg font-medium mb-2">Slow</h3>
               <p className="text-muted-foreground">
-                Months of drafting and internal revision lead to further IND
-                approval date.
+                Drafting the different components manually takes months, pushing
+                back the launch date.
               </p>
             </div>
 
@@ -53,8 +47,8 @@ const Problem = () => {
               </div>
               <h3 className="text-lg font-medium mb-2">Hit-or-miss advice</h3>
               <p className="text-muted-foreground">
-                Without funds for good consultants, there's a larger risk of
-                getting un-suited or outdated advice.
+                It's a common for startups to suffer from outdated or unsuited
+                advice from consultants.
               </p>
             </div>
           </div>
