@@ -45,9 +45,7 @@ const Team = () => {
             <div className="bg-white rounded-lg p-6">
               <div className="flex flex-col items-center text-center">
                 <h3 className="text-lg font-medium mb-1">Brad Gillespie</h3>
-                <p className="text-accent font-medium mb-3">
-                  Advisor (former FDA reviewer)
-                </p>
+                <p className="text-accent font-medium mb-3">Advisor</p>
                 <div className="flex space-x-2 mb-4">
                   <a
                     href="https://www.linkedin.com/in/bradleykgillespie/"
