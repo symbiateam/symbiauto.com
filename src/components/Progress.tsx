@@ -12,8 +12,7 @@ const Progress = () => {
               Our Progress
             </h2>
             <p className="text-xl text-muted-foreground">
-              Symbia began in April 2025, and we're fast. Here are demos of what
-              we've made so far.
+              Symbia began in April 2025, and we're fast.
             </p>
           </div>
 
@@ -32,7 +31,7 @@ const Progress = () => {
                     {/* Replace with your actual YouTube video ID */}
                     <iframe
                       className="w-full h-full"
-                      src="https://www.youtube.com/embed/GBOEgBYMEyo"
+                      src="https://www.youtube.com/embed/VYPSnqp6erE"
                       title="CTD Generator Demo"
                       frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -41,7 +40,7 @@ const Progress = () => {
                   </div>
                   <p className="text-sm text-muted-foreground mt-2">
                     CTD Generator Demo: See how Symbia automatically generates
-                    Module 2 documentation.
+                    section 2.6.6. Fully synthetic study reports were used.
                   </p>
                 </TabsContent>
                 <TabsContent value="protocol-reviewer" className="mt-4">
@@ -58,7 +57,8 @@ const Progress = () => {
                   </div>
                   <p className="text-sm text-muted-foreground mt-2">
                     Protocol Reviewer Demo: Watch how Symbia analyzes protocols
-                    and flags potential clinical hold issues.
+                    and flags potential clinical hold issues. A fully synthetic
+                    protocol was used.
                   </p>
                 </TabsContent>
               </Tabs>
@@ -112,10 +112,22 @@ const Progress = () => {
                   </div>
                   <p className="text-muted-foreground">
                     <span className="font-medium text-foreground">
+                      Tools in progress:
+                    </span>{" "}
+                    We're actively building a pre-clinical experiment planner.
+                    Please reach out for a demo!
+                  </p>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-6 h-6 rounded-full bg-accent/10 flex items-center justify-center mr-3 mt-0.5">
+                    <CheckCircle size={14} className="text-accent" />
+                  </div>
+                  <p className="text-muted-foreground">
+                    <span className="font-medium text-foreground">
                       Expansion:
                     </span>{" "}
                     We're working to expand, so that our platform can support
-                    clinical trials in other continents.
+                    clinical trials in other continents and for medical devices.
                   </p>
                 </div>
               </div>

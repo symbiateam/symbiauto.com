@@ -10,10 +10,12 @@ const Solution = () => {
               Our Solution
             </h2>
             <p className="text-xl text-muted-foreground">
-              Symbia tells you what you need to account for in your pre-clinical
-              experiments and drafts your dense regulatory reports for you. You
+              Symbia provides an end-end AI support platform for INDs/CTAs. It
+              makes filing them fast and straightforward. It tells you what you
+              need to account for in your pre-clinical experiments, flags
+              compliance issues, and drafts your dense regulatory reports. You
               can receive the majority of your regulatory support from one
-              source and submit your IND months earlier.
+              source and submit months earlier.
             </p>
           </div>
 
@@ -25,9 +27,8 @@ const Solution = () => {
               <div>
                 <h3 className="text-xl font-medium mb-3">Fill Background</h3>
                 <p className="text-muted-foreground">
-                  Fill out a therapeutic profile, which helps Symbia provide
-                  study recommendations and write your IND docs with the highest
-                  scientific relevancy.
+                  Fill out a therapeutic profile, which ensures Symbia can
+                  deliver with scientific accuracy.
                 </p>
               </div>
             </div>
@@ -41,8 +42,9 @@ const Solution = () => {
                   Pre-clinical Guidance
                 </h3>
                 <p className="text-muted-foreground">
-                  Upload past experimental data and papers and obtain a
-                  customized list of pre-clinical experiments.
+                  Upload your research data to receive tailored guidance on
+                  optimal pre-clinical experiments for your therapeutic
+                  candidate.
                 </p>
               </div>
             </div>
@@ -54,8 +56,8 @@ const Solution = () => {
               <div>
                 <h3 className="text-xl font-medium mb-3">Obtain Drafts</h3>
                 <p className="text-muted-foreground">
-                  Import your pre-clinical data from Google Drive or Benchling
-                  and receive first CTD/protocol drafts in minutes.
+                  Import your pre-clinical data from Google Drive (and soon
+                  Benchling) and receive first CTD/protocol drafts in minutes.
                 </p>
               </div>
             </div>
@@ -69,9 +71,8 @@ const Solution = () => {
                   Proactive Compliance
                 </h3>
                 <p className="text-muted-foreground">
-                  Upload your pre-clinical data and Symbia flags potential
-                  missing data points. Obtain your protocol and Symbia flags
-                  what could be called out for clinical hold.
+                  Upload your pre-clinical data and/or protocolsand Symbia flags
+                  potential issues.
                 </p>
               </div>
             </div>
