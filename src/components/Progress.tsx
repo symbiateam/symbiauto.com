@@ -1,13 +1,11 @@
-import { Button } from "@/components/ui/button";
-import { CheckCircle } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const Progress = () => {
   return (
-    <section className="py-20 bg-secondary/30">
+    <section className="py-20 bg-gradient-to-b from-background to-secondary/10 relative overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-medium mb-6">
               Our Progress
             </h2>
@@ -20,14 +18,14 @@ const Progress = () => {
             {/* Video Tabs */}
             <div className="space-y-4">
               <Tabs defaultValue="ctd-generator" className="w-full">
-                <TabsList className="grid w-full grid-cols-2">
-                  <TabsTrigger value="ctd-generator">CTD Generator</TabsTrigger>
-                  <TabsTrigger value="protocol-reviewer">
+                <TabsList className="grid w-full grid-cols-2 bg-secondary/20">
+                  <TabsTrigger value="ctd-generator" className="data-[state=active]:bg-accent data-[state=active]:text-white">CTD Generator</TabsTrigger>
+                  <TabsTrigger value="protocol-reviewer" className="data-[state=active]:bg-accent data-[state=active]:text-white">
                     Protocol Reviewer
                   </TabsTrigger>
                 </TabsList>
-                <TabsContent value="ctd-generator" className="mt-4">
-                  <div className="aspect-video bg-black/5 rounded-lg shadow-md overflow-hidden">
+                <TabsContent value="ctd-generator" className="mt-6">
+                  <div className="aspect-video rounded-lg overflow-hidden border border-accent/20 hover:border-accent/40 transition-colors">
                     {/* Replace with your actual YouTube video ID */}
                     <iframe
                       className="w-full h-full"
@@ -38,13 +36,13 @@ const Progress = () => {
                       allowFullScreen
                     ></iframe>
                   </div>
-                  <p className="text-sm text-muted-foreground mt-2">
+                  <p className="text-sm text-muted-foreground mt-3">
                     CTD Generator Demo: See how Symbia automatically generates
                     section 2.6.6. Fully synthetic study reports were used.
                   </p>
                 </TabsContent>
-                <TabsContent value="protocol-reviewer" className="mt-4">
-                  <div className="aspect-video bg-black/5 rounded-lg shadow-md overflow-hidden">
+                <TabsContent value="protocol-reviewer" className="mt-6">
+                  <div className="aspect-video rounded-lg overflow-hidden border border-accent/20 hover:border-accent/40 transition-colors">
                     {/* Replace with your actual YouTube video ID */}
                     <iframe
                       className="w-full h-full"
@@ -55,7 +53,7 @@ const Progress = () => {
                       allowFullScreen
                     ></iframe>
                   </div>
-                  <p className="text-sm text-muted-foreground mt-2">
+                  <p className="text-sm text-muted-foreground mt-3">
                     Protocol Reviewer Demo: Watch how Symbia analyzes protocols
                     and flags potential clinical hold issues. A fully synthetic
                     protocol was used.
@@ -66,73 +64,53 @@ const Progress = () => {
 
             {/* Progress Bullets */}
             <div className="space-y-6">
-              <div className="space-y-4">
-                <div className="flex items-start">
-                  <div className="w-6 h-6 rounded-full bg-accent/10 flex items-center justify-center mr-3 mt-0.5">
-                    <CheckCircle size={14} className="text-accent" />
-                  </div>
+              <div className="space-y-8">
+                <div className="group">
+                  <div className="h-1 w-0 bg-accent mb-4 transition-all duration-300 group-hover:w-1/3"></div>
+                  <h3 className="text-lg font-medium mb-2 text-accent">CTD Generator</h3>
                   <p className="text-muted-foreground">
-                    <span className="font-medium text-foreground">
-                      CTD Generator:
-                    </span>{" "}
                     We can generate certain CTDs of Module 2. We are currently
                     working on the rest of Module 2 and 3.
                   </p>
                 </div>
 
-                <div className="flex items-start">
-                  <div className="w-6 h-6 rounded-full bg-accent/10 flex items-center justify-center mr-3 mt-0.5">
-                    <CheckCircle size={14} className="text-accent" />
-                  </div>
+                <div className="group">
+                  <div className="h-1 w-0 bg-accent mb-4 transition-all duration-300 group-hover:w-1/3"></div>
+                  <h3 className="text-lg font-medium mb-2 text-accent">Protocol Reviewer</h3>
                   <p className="text-muted-foreground">
-                    <span className="font-medium text-foreground">
-                      Protocol Reviewer:
-                    </span>{" "}
                     We can analyze protocols and provide feedback that would
                     have potentially caused a clinical hold.
                   </p>
                 </div>
 
-                <div className="flex items-start">
-                  <div className="w-6 h-6 rounded-full bg-accent/10 flex items-center justify-center mr-3 mt-0.5">
-                    <CheckCircle size={14} className="text-accent" />
-                  </div>
+                <div className="group">
+                  <div className="h-1 w-0 bg-accent mb-4 transition-all duration-300 group-hover:w-1/3"></div>
+                  <h3 className="text-lg font-medium mb-2 text-accent">Validation</h3>
                   <p className="text-muted-foreground">
-                    <span className="font-medium text-foreground">
-                      Validation:
-                    </span>{" "}
                     The quality and accuracy of our CTDs and protocol feedback
                     have been reviewed by a former FDA reviewer. It is going
                     well, and we are continuously making improvements.
                   </p>
                 </div>
-                <div className="flex items-start">
-                  <div className="w-6 h-6 rounded-full bg-accent/10 flex items-center justify-center mr-3 mt-0.5">
-                    <CheckCircle size={14} className="text-accent" />
-                  </div>
+                
+                <div className="group">
+                  <div className="h-1 w-0 bg-accent mb-4 transition-all duration-300 group-hover:w-1/3"></div>
+                  <h3 className="text-lg font-medium mb-2 text-accent">Tools in Progress</h3>
                   <p className="text-muted-foreground">
-                    <span className="font-medium text-foreground">
-                      Tools in progress:
-                    </span>{" "}
                     We're actively building a pre-clinical experiment planner.
                     Please reach out for a demo!
                   </p>
                 </div>
-                <div className="flex items-start">
-                  <div className="w-6 h-6 rounded-full bg-accent/10 flex items-center justify-center mr-3 mt-0.5">
-                    <CheckCircle size={14} className="text-accent" />
-                  </div>
+                
+                <div className="group">
+                  <div className="h-1 w-0 bg-accent mb-4 transition-all duration-300 group-hover:w-1/3"></div>
+                  <h3 className="text-lg font-medium mb-2 text-accent">Expansion</h3>
                   <p className="text-muted-foreground">
-                    <span className="font-medium text-foreground">
-                      Expansion:
-                    </span>{" "}
                     We're working to expand, so that our platform can support
                     clinical trials in other continents and for medical devices.
                   </p>
                 </div>
               </div>
-
-              <div className="mt-8"></div>
             </div>
           </div>
         </div>

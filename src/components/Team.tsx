@@ -2,11 +2,12 @@ import { Linkedin } from "lucide-react";
 
 const Team = () => {
   return (
-    <section id="team" className="py-20 bg-secondary/50">
+    <section id="team" className="py-20 bg-gradient-to-b from-background to-secondary/10 relative overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-medium mb-6">Our Team</h2>
+            
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

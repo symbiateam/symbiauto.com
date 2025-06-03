@@ -1,8 +1,8 @@
-import { FileText, ClipboardList, Search, CheckCircle } from "lucide-react";
+// No icons needed for the new design
 
 const Solution = () => {
   return (
-    <section id="solution" className="py-20">
+    <section id="solution" className="py-20 bg-gradient-to-b from-secondary/10 to-background relative overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
@@ -20,61 +20,45 @@ const Solution = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12 mb-16">
-            <div className="flex items-start space-x-5">
-              <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mt-1">
-                <ClipboardList size={22} className="text-accent" />
-              </div>
-              <div>
-                <h3 className="text-xl font-medium mb-3">Fill Background</h3>
-                <p className="text-muted-foreground">
-                  Fill out a therapeutic profile, which ensures Symbia can
-                  deliver with scientific accuracy.
-                </p>
-              </div>
+            <div className="group">
+              <div className="h-1 w-0 bg-accent mb-6 transition-all duration-300 group-hover:w-1/2"></div>
+              <h3 className="text-xl font-medium mb-3 text-accent">Fill Background</h3>
+              <p className="text-muted-foreground">
+                Fill out a therapeutic profile, which ensures Symbia can
+                deliver with scientific accuracy.
+              </p>
             </div>
 
-            <div className="flex items-start space-x-5">
-              <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mt-1">
-                <Search size={22} className="text-accent" />
-              </div>
-              <div>
-                <h3 className="text-xl font-medium mb-3">
-                  Pre-clinical Guidance
-                </h3>
-                <p className="text-muted-foreground">
-                  Upload your research data to receive tailored guidance on
-                  optimal pre-clinical experiments for your therapeutic
-                  candidate.
-                </p>
-              </div>
+            <div className="group">
+              <div className="h-1 w-0 bg-accent mb-6 transition-all duration-300 group-hover:w-1/2"></div>
+              <h3 className="text-xl font-medium mb-3 text-accent">
+                Pre-clinical Guidance
+              </h3>
+              <p className="text-muted-foreground">
+                Upload your research data to receive tailored guidance on
+                optimal pre-clinical experiments for your therapeutic
+                candidate.
+              </p>
             </div>
 
-            <div className="flex items-start space-x-5">
-              <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mt-1">
-                <FileText size={22} className="text-accent" />
-              </div>
-              <div>
-                <h3 className="text-xl font-medium mb-3">Obtain Drafts</h3>
-                <p className="text-muted-foreground">
-                  Import your pre-clinical data from Google Drive (and soon
-                  Benchling) and receive first CTD/protocol drafts in minutes.
-                </p>
-              </div>
+            <div className="group">
+              <div className="h-1 w-0 bg-accent mb-6 transition-all duration-300 group-hover:w-1/2"></div>
+              <h3 className="text-xl font-medium mb-3 text-accent">Obtain Drafts</h3>
+              <p className="text-muted-foreground">
+                Import your pre-clinical data from Google Drive (and soon
+                Benchling) and receive first CTD/protocol drafts in minutes.
+              </p>
             </div>
 
-            <div className="flex items-start space-x-5">
-              <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mt-1">
-                <CheckCircle size={22} className="text-accent" />
-              </div>
-              <div>
-                <h3 className="text-xl font-medium mb-3">
-                  Proactive Compliance
-                </h3>
-                <p className="text-muted-foreground">
-                  Upload your pre-clinical data and/or protocolsand Symbia flags
-                  potential issues.
-                </p>
-              </div>
+            <div className="group">
+              <div className="h-1 w-0 bg-accent mb-6 transition-all duration-300 group-hover:w-1/2"></div>
+              <h3 className="text-xl font-medium mb-3 text-accent">
+                Proactive Compliance
+              </h3>
+              <p className="text-muted-foreground">
+                Upload your pre-clinical data and/or protocols and Symbia flags
+                potential issues.
+              </p>
             </div>
           </div>
         </div>
