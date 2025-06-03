@@ -1,13 +1,17 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import ContactForm from "@/components/ContactForm";
+import GeometricAnimation from "@/components/GeometricAnimation";
 
 const Hero = () => {
   const [showContactForm, setShowContactForm] = useState(false);
 
   return (
-    <section className="relative pt-32 pb-20 md:pt-40 md:pb-32">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
+      {/* Background Animation */}
+      <GeometricAnimation />
+      
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Main Heading */}
           <h1 className="mercury-heading mb-8">
@@ -18,7 +22,7 @@ const Hero = () => {
 
           {/* Subheading */}
           <p className="mercury-subheading mb-12 max-w-2xl mx-auto">
-            Assemble your IND with all the right tools in one place.
+          Assemble your Investigational New Drug (IND) Application with all the right tools in one place.
           </p>
 
           {/* CTA Buttons */}
