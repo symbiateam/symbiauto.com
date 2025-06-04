@@ -58,6 +58,20 @@ const Team = () => {
               </div>
             </div>
           </div>
+          
+          {/* Backed by Y Combinator */}
+          <div className="mt-16 text-center">
+            <h3 className="text-xl font-medium mb-4">Backed by</h3>
+            <div className="flex justify-center items-center">
+              <div className="bg-white rounded-lg p-6">
+                <img 
+                  src="/yc-logo.png" 
+                  alt="Y Combinator" 
+                  className="h-10 w-auto" 
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
