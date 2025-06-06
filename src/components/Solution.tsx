@@ -20,37 +20,27 @@ const Solution = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-12 mb-16">
             <div className="group">
               <div className="h-1 w-0 bg-accent mb-6 transition-all duration-300 group-hover:w-1/2"></div>
               <h3 className="text-xl font-medium mb-3 text-accent">
-                Fill Background
+                Plan IND-enabling studies
               </h3>
               <p className="text-muted-foreground">
-                Fill out a therapeutic profile, which ensures Symbia can deliver
-                with scientific accuracy.
+                Upload your drug-candidate profile and any existing nonclinical data to instantly get a
+                customized roadmap of the IND-enabling studies you'll need.
               </p>
             </div>
 
             <div className="group">
               <div className="h-1 w-0 bg-accent mb-6 transition-all duration-300 group-hover:w-1/2"></div>
               <h3 className="text-xl font-medium mb-3 text-accent">
-                Pre-clinical Guidance
+                Auto draft documents
               </h3>
               <p className="text-muted-foreground">
-                Upload your research data to receive tailored guidance on
-                optimal pre-clinical experiments for your therapeutic candidate.
-              </p>
-            </div>
-
-            <div className="group">
-              <div className="h-1 w-0 bg-accent mb-6 transition-all duration-300 group-hover:w-1/2"></div>
-              <h3 className="text-xl font-medium mb-3 text-accent">
-                Obtain Drafts
-              </h3>
-              <p className="text-muted-foreground">
-                Import your pre-clinical data from Google Drive (and soon
-                Benchling) and receive first CTD/protocol drafts in minutes.
+                Sync your non-clinical data from Google Drive or Benchling to instantly generate draft CTD
+                non-clinical modules, FIH protocols, IBs, FDA briefing packs. (CMC drafts available when you
+                add manufacturing data.)
               </p>
             </div>
 
@@ -60,8 +50,7 @@ const Solution = () => {
                 Proactive Compliance
               </h3>
               <p className="text-muted-foreground">
-                Upload your pre-clinical data and/or protocols and Symbia flags
-                potential issues.
+                Upload your nonclinical data and/or protocol drafts and Symbia flags potential issues.
               </p>
             </div>
           </div>
