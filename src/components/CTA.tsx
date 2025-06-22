@@ -10,7 +10,7 @@ const CTA = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-medium mb-6">
-            Receive reliable regulatory support quickly and in one place.
+            Acclerate your IND filing.
           </h2>
 
           <div className="flex flex-col sm:flex-row justify-center gap-4">

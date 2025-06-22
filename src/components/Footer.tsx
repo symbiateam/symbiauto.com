@@ -11,9 +11,6 @@ const Footer = () => {
                 Symbia
               </span>
             </div>
-            <p className="text-muted-foreground max-w-md">
-              Assemble your IND with all the right tools in one place.
-            </p>
           </div>
 
           <div className="mt-8 md:mt-0">

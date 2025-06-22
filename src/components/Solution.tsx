@@ -13,10 +13,10 @@ const Solution = () => {
               What can Symbia do for you?
             </h2>
             <p className="text-xl text-muted-foreground">
-              Symbia is an end-to-end AI platform for IND filings. It tells you
-              what IND-enabling studies you need, flags compliance issues early,
-              and drafts dense documents. Users can get comprehensive regulatory
-              support from one source and submit months faster.
+              Symbia is an AI platform that accelerates IND filings. It tells
+              you what IND-enabling studies you need, flags compliance issues
+              early, and drafts dense documents. Users can get comprehensive
+              regulatory support from one source and submit months faster.
             </p>
           </div>
 
@@ -27,8 +27,9 @@ const Solution = () => {
                 Plan IND-enabling studies
               </h3>
               <p className="text-muted-foreground">
-                Upload your drug-candidate profile and any existing nonclinical data to instantly get a
-                customized roadmap of the IND-enabling studies you'll need.
+                Upload your drug-candidate profile and any existing nonclinical
+                data to instantly get a customized roadmap of the necessary
+                IND-enabling. Helps with faster decision-making.
               </p>
             </div>
 
@@ -38,9 +39,10 @@ const Solution = () => {
                 Auto draft documents
               </h3>
               <p className="text-muted-foreground">
-                Sync your non-clinical data from Google Drive or Benchling to instantly generate draft CTD
-                non-clinical modules, FIH protocols, IBs, FDA briefing packs. (CMC drafts available when you
-                add manufacturing data.)
+                Sync your non-clinical data from Google Drive or Benchling to
+                instantly generate draft CTD non-clinical modules, IBs, FDA
+                briefing packs. (CMC drafts available when you add manufacturing
+                data.)
               </p>
             </div>
 
@@ -50,7 +52,8 @@ const Solution = () => {
                 Proactive Compliance
               </h3>
               <p className="text-muted-foreground">
-                Upload your nonclinical data and/or protocol drafts and Symbia flags potential issues.
+                Upload your nonclinical data and/or protocol drafts and Symbia
+                flags potential issues.
               </p>
             </div>
           </div>
