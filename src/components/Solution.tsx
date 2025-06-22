@@ -16,7 +16,7 @@ const Solution = () => {
               Symbia is an AI platform that accelerates IND filings. It tells
               you what IND-enabling studies you need, flags compliance issues
               early, and drafts dense documents. Users can get comprehensive
-              regulatory support from one source and submit months faster.
+              regulatory support and submit months faster.
             </p>
           </div>
 
