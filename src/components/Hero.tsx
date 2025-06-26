@@ -22,7 +22,7 @@ const Hero = () => {
 
           {/* Subheading */}
           <p className="mercury-subheading mb-12 max-w-2xl mx-auto">
-            Symbia makes filing INDs a fast and clear process. Our AI
+            Symbia makes filing INDs a faster and clearer process. Our AI
             accelerates the planning and document writing with automation.
           </p>
 
