@@ -13,10 +13,9 @@ const Solution = () => {
               What can Symbia do for you?
             </h2>
             <p className="text-xl text-muted-foreground">
-              Symbia is an AI platform that accelerates IND filings. It tells
-              you what IND-enabling studies you need, flags compliance issues
-              early, and drafts dense documents. Users can get comprehensive
-              regulatory support and submit months faster.
+              Users can fast-track their IND and have their INDs submitted
+              months earlier. It recommends specific IND-enabling studies, flags
+              compliance issues early, and drafts dense IND documents.
             </p>
           </div>
 
@@ -27,9 +26,10 @@ const Solution = () => {
                 Plan IND-enabling studies
               </h3>
               <p className="text-muted-foreground">
-                Upload your drug-candidate profile and any existing nonclinical
-                data to instantly get a customized roadmap of the necessary
-                IND-enabling. Helps with faster decision-making.
+                Make faster decisions regarding what IND-enabling studies to
+                conduct. Upload your drug-candidate profile and any existing
+                nonclinical data to instantly get a customized roadmap of the
+                necessary IND-enabling.
               </p>
             </div>
 
