@@ -14,11 +14,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Main Heading */}
-          <h1 className="mercury-heading mb-8">
-            The IND,
-            <br />
-            simplified.
-          </h1>
+          <h1 className="mercury-heading mb-8">Fast-track your IND.</h1>
 
           {/* Subheading */}
           <p className="mercury-subheading mb-12 max-w-2xl mx-auto">
