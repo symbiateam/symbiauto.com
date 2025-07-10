@@ -14,8 +14,8 @@ const Solution = () => {
             </h2>
             <p className="text-xl text-muted-foreground">
               Users can fast-track their IND and have their INDs submitted
-              months earlier. It recommends specific IND-enabling studies, flags
-              compliance issues early, and drafts dense IND documents.
+              months earlier. It recommends specific IND-enabling studies and
+              drafts and reviews dense IND documents.
             </p>
           </div>
 
@@ -28,32 +28,22 @@ const Solution = () => {
               <p className="text-muted-foreground">
                 Make faster decisions regarding what IND-enabling studies to
                 conduct. Upload your drug-candidate profile and any existing
-                nonclinical data to instantly get a customized roadmap of the
-                necessary IND-enabling.
+                nonclinical data to retrieve relevant literature and information
+                on similar drugs. Also, instantly get a customized roadmap of
+                the recommended IND-enabling studies.
               </p>
             </div>
 
             <div className="group">
               <div className="h-1 w-0 bg-accent mb-6 transition-all duration-300 group-hover:w-1/2"></div>
               <h3 className="text-xl font-medium mb-3 text-accent">
-                Auto draft documents
+                Auto draft/review documents
               </h3>
               <p className="text-muted-foreground">
-                Sync your non-clinical data from Google Drive or Benchling to
-                instantly generate draft CTD non-clinical modules, IBs, FDA
-                briefing packs. (CMC drafts available when you add manufacturing
-                data.)
-              </p>
-            </div>
-
-            <div className="group">
-              <div className="h-1 w-0 bg-accent mb-6 transition-all duration-300 group-hover:w-1/2"></div>
-              <h3 className="text-xl font-medium mb-3 text-accent">
-                Proactive Compliance
-              </h3>
-              <p className="text-muted-foreground">
-                Upload your nonclinical data and/or protocol drafts and Symbia
-                flags potential issues.
+                Sync your nonclinical and CMC data from Google Drive or
+                Benchling to instantly generate draft CTD modules, IBs, FDA
+                briefing packs, etc. Automatically QC your documents, saving
+                time and effort on manual review.
               </p>
             </div>
           </div>
