@@ -19,8 +19,9 @@ const Solution = () => {
             </p>
           </div>
 
-          <div className="flex flex-col md:flex-row justify-between gap-8 mb-16">
-            <div className="flex-1 group p-6 border rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-12 mb-16">
+            <div className="group">
+              <div className="h-1 w-0 bg-accent mb-6 transition-all duration-300 group-hover:w-1/2"></div>
               <h3 className="text-xl font-medium mb-3 text-accent">
                 Plan IND-enabling studies
               </h3>
@@ -29,19 +30,20 @@ const Solution = () => {
                 conduct. Upload your drug-candidate profile and any existing
                 nonclinical data to retrieve relevant literature and information
                 on similar drugs. Also, instantly get a customized roadmap of
-                the recommended IND-enabling studies and a completion timeline.
+                the recommended IND-enabling studies.
               </p>
             </div>
 
-            <div className="flex-1 group p-6 border rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
+            <div className="group">
+              <div className="h-1 w-0 bg-accent mb-6 transition-all duration-300 group-hover:w-1/2"></div>
               <h3 className="text-xl font-medium mb-3 text-accent">
                 Auto draft/review documents
               </h3>
               <p className="text-muted-foreground">
                 Sync your nonclinical and CMC data from Google Drive or
                 Benchling to instantly generate draft CTD modules, IBs, FDA
-                briefing packs, etc. Upload your documents and automatically
-                receive QCed versions, saving time and effort on manual review.
+                briefing packs, etc. Automatically QC your documents, saving
+                time and effort on manual review.
               </p>
             </div>
           </div>
