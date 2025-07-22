@@ -18,8 +18,7 @@ const Hero = () => {
 
           {/* Subheading */}
           <p className="mercury-subheading mb-12 max-w-2xl mx-auto">
-            We automate the drafting and review of IND documents, saving teams
-            80% of time and effort.
+            Assemble your IND documents at 2x the speed.
           </p>
 
           {/* CTA Buttons */}
