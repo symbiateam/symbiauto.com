@@ -28,7 +28,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center">
             <a href="/" className="flex items-center">
-              <img src="/symbia-logo.svg" alt="Symbia Logo" className="h-8" />
+              <img src="/symbia-octopus-full.png" alt="Symbia Logo" className="h-8" />
             </a>
           </div>
 

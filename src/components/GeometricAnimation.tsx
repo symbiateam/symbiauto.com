@@ -21,7 +21,7 @@ const GeometricAnimation: React.FC = () => {
     
     // Animation parameters
     let time = 0;
-    const primaryColor = 'hsla(215, 90%, 50%, 0.15)'; // Blue accent color with low opacity
+    const primaryColor = 'hsla(203, 69%, 45%, 0.15)'; // #2596be accent color with low opacity
     
     // Animation loop
     const animate = () => {
