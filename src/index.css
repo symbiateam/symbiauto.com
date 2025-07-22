@@ -25,7 +25,7 @@
     --muted: 210 40% 96%;
     --muted-foreground: 215 16% 47%;
 
-    --accent: 215 90% 50%;
+    --accent: 203 69% 45%; /* #2596be */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -48,7 +48,7 @@
 }
 
 .gradient-text {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent;
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-[#1a237e] to-[#2596be];
 }
 
 .hover-scale {
